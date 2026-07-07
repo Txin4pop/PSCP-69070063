@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-2996
+3011
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-544450
+544487
 ```
 
 OJ status:
@@ -73,10 +73,9 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-so this problem basicly just reverst the string so i just string slicing to do this and convert the string in to lower case after slicing 
-the input will have Like higer case and lower case but the output should be only in lower case
-```
 
+```
+input will have 2 color , the input will only have 3 color Red , Yellow and Blue then will mix the color and output the color but if the input is not Red Blue or Yellow will out put error
 ---
 
 ## 3. My First Plan
@@ -94,10 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:create 1 String varable to Store the String
-Step 2:use string slicing to invert the order of string's charater order
-Step 3:use .lower to make it lower case
-Step 4: print the result
+Step 1:Create 2 Variable to Store 2 input colors
+Step 2:Write a color mixer logic example Red + Yellow will output Orange as a output using If elif and else
+Step 3:Print the output
 ```
 
 ---
@@ -117,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-i didn't change the plan because i think string slicing is the best way to slove this problem be cause just type -1 in to the step of string slicing that all
+My first plan is work but it not cover all testcase so i add .lower in to input because my color mixer is case sensitive after that i know that i didnt write incase of Red + Red will need to out put Red and i add that(Not only red but also in Blue and Yellow) and it still wrong in some case and i found that If the input is  Yellow and Red it will Show error Because i use >if Color1 == "red" and Color2 == "yellow"< so i add more elif statement for that testcase
 ```
 
 ---
@@ -137,25 +135,26 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-For testing the reverse logic
+To Check that will Output still correct if The input is in lower case and Higer case
 ```
 
 Input:
 
 ```text
-Thinnapop Sriaksron
+ReD
+BLue
 ```
 
 Expected output:
 
 ```text
-norskairs popanniht
+Violet
 ```
 
 Actual output:
 
 ```text
-norskairs popanniht
+Violet
 ```
 
 Result:
@@ -169,25 +168,26 @@ Pass
 Why I chose this case:
 
 ```text
-To test lower case convert logic
+To check if the input order has been chnage will the output still be Correct
 ```
 
 Input:
 
 ```text
-Hello AE
+Yellow
+Red
 ```
 
 Expected output:
 
 ```text
-ea olleh
+Orange
 ```
 
 Actual output:
 
 ```text
-ea olleh
+Orange
 ```
 
 Result:
@@ -201,25 +201,26 @@ Pass
 Why I chose this case:
 
 ```text
-To test that it also work in numbers only string
+To Check that if input was the same will it output be the same as a input
 ```
 
 Input:
 
 ```text
-123456
+Red
+Red
 ```
 
 Expected output:
 
 ```text
-654321
+Red
 ```
 
 Actual output:
 
 ```text
-654321
+Red
 ```
 
 Result:
